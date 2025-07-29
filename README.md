@@ -175,9 +175,22 @@ Run the following command to create a cluster (this can take several minutes):
 
 ```
 
-eksctl create cluster --name my-kustomize-cluster --version 1.18 --region us-west-2 --nodegroup-name my-nodes --node-type t2.medium --nodes 3
+eksctl create cluster --name my-kustomize-cluster --version 1.33 --region us-west-2 --nodegroup-name my-nodes --node-type t2.medium --nodes 3
 
 ```
+
+<img width="2058" height="1202" alt="image" src="https://github.com/user-attachments/assets/c944f7c3-99be-4c0d-954e-c1c71987c9f9" />
+
+
+<img width="2044" height="1048" alt="image" src="https://github.com/user-attachments/assets/1fe0bf82-67cd-445c-a746-d4d8ec519f43" />
+
+
+<img width="1676" height="258" alt="image" src="https://github.com/user-attachments/assets/25e39a75-cb3b-4d12-845b-7fbb06a706a2" />
+
+
+<img width="2088" height="484" alt="image" src="https://github.com/user-attachments/assets/a76e746b-e71d-4d66-8970-2e408a06b8ac" />
+
+
 
 This command creates an EKS cluster named 'my-kustomize-cluster' with 3 nodes of type ' t2 medium'.
 
@@ -211,6 +224,9 @@ Step 5: Verify Deployment
 - Run 'kubectl get all' to see all the resources (like pods, services, deployments) that have been deployed to your cluster.
 - You should see the resources defined in your Kustomize configurations.
 
+<img width="2072" height="694" alt="image" src="https://github.com/user-attachments/assets/30558840-c158-4c48-8ce6-65288c22aa09" />
+
+
 2. Troubleshoot if Needed:
 -  If resources are not appearing as expected, use 'kubectl describe' or 'kubectl logs' commands to troubleshoot.
 
@@ -221,9 +237,15 @@ Step 6: Clean Up Resources
 - When you're done with testing, clean up your resources to avoid incurring unnecessary costs.
 - Run 'kubectl delete -k overlays/dev/ to remove the resources.
 
+<img width="1758" height="66" alt="image" src="https://github.com/user-attachments/assets/eb8ab2a8-c286-4d66-befe-4f5ad80fcc36" />
+
+
 2. Delete the EKS Cluster:
 
 - Remove your EKS cluster with: 'eksctl delete cluster --name my-kustomize-cluster'
+
+<img width="1954" height="430" alt="image" src="https://github.com/user-attachments/assets/3b6b84ce-3f96-48f2-b703-e3fa877c1217" />
+
 Additional Resources and Considerations
 - AWS Costs: Be mindful of AWS costs associated with EKS. Always clean up resources after use.
 
