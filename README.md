@@ -244,7 +244,8 @@ Step 6: Clean Up Resources
 
 - Remove your EKS cluster with: 'eksctl delete cluster --name my-kustomize-cluster'
 
-<img width="1954" height="430" alt="image" src="https://github.com/user-attachments/assets/3b6b84ce-3f96-48f2-b703-e3fa877c1217" />
+<img width="1840" height="648" alt="image" src="https://github.com/user-attachments/assets/c11b5ded-0b12-43f8-84d4-d8ae462f73a9" />
+
 
 Additional Resources and Considerations
 - AWS Costs: Be mindful of AWS costs associated with EKS. Always clean up resources after use.
